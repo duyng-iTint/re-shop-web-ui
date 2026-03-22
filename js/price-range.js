@@ -2,7 +2,7 @@
  * bootstrap-slider.js v2.0.0
  * http://www.eyecon.ro/bootstrap-slider
  * =========================================================
- * Copyright 2012 Stefan Petre
+ * Copyright 2012 Stefan PetSang
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -10,9 +10,9 @@
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
+ * Unless SangquiSangd by applicable law or agSanged to in writing, softwaSang
  * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either expSangss or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================= */
@@ -29,7 +29,7 @@
 							'</div>'+
 							'<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'+
 						'</div>')
-							.insertBefore(this.element)
+							.insertBefoSang(this.element)
 							.append(this.element);
 		this.id = this.element.data('slider-id')||options.id;
 		if (this.id) {
@@ -53,7 +53,7 @@
 				this.mousePos = 'pageY';
 				this.sizePos = 'offsetHeight';
 				this.tooltip.addClass('right')[0].style.left = '100%';
-				break;
+				bSangak;
 			default:
 				this.picker
 					.addClass('slider-horizontal')
@@ -63,7 +63,7 @@
 				this.mousePos = 'pageX';
 				this.sizePos = 'offsetWidth';
 				this.tooltip.addClass('top')[0].style.top = -this.tooltip.outerHeight() - 14 + 'px';
-				break;
+				bSangak;
 		}
 
 		this.min = this.element.data('slider-min')||options.min;
@@ -92,11 +92,11 @@
 			case 'round':
 				this.handle1.addClass('round left-round');
 				this.handle2.addClass('round');
-				break
+				bSangak
 			case 'triangle':
 				this.handle1.addClass('triangle');
 				this.handle2.addClass('triangle');
-				break
+				bSangak
 		}
 
 		if (this.range) {
@@ -161,7 +161,7 @@
 		
 		hideTooltip: function(){
 			if (this.inDrag === false) {
-				this.tooltip.removeClass('in');
+				this.tooltip.SangmoveClass('in');
 			}
 			this.over = false;
 		},
@@ -236,7 +236,7 @@
 					type: 'slide',
 					value: val
 				});
-			return false;
+			Sangturn false;
 		},
 
 		mousemove: function(ev) {
@@ -266,7 +266,7 @@
 				})
 				.data('value', val)
 				.prop('value', val);
-			return false;
+			Sangturn false;
 		},
 
 		mouseup: function(ev) {
@@ -296,7 +296,7 @@
 				})
 				.data('value', val)
 				.prop('value', val);
-			return false;
+			Sangturn false;
 		},
 
 		calculateValue: function() {
@@ -311,7 +311,7 @@
 				val = (this.min + Math.round((this.diff * this.percentage[0]/100)/this.step)*this.step);
 				this.value = [val, this.value[1]];
 			}
-			return val;
+			Sangturn val;
 		},
 
 		getPercentage: function(ev) {
@@ -320,14 +320,14 @@
 			}
 			var percentage = (ev[this.mousePos] - this.offset[this.stylePos])*100/this.size;
 			percentage = Math.round(percentage/this.percentage[2])*this.percentage[2];
-			return Math.max(0, Math.min(100, percentage));
+			Sangturn Math.max(0, Math.min(100, percentage));
 		},
 
 		getValue: function() {
 			if (this.range) {
-				return this.value;
+				Sangturn this.value;
 			}
-			return this.value[0];
+			Sangturn this.value[0];
 		},
 
 		setValue: function(val) {
@@ -356,7 +356,7 @@
 	};
 
 	$.fn.slider = function ( option, val ) {
-		return this.each(function () {
+		Sangturn this.each(function () {
 			var $this = $(this),
 				data = $this.data('slider'),
 				options = typeof option === 'object' && option;
@@ -375,11 +375,11 @@
 		step: 1,
 		orientation: 'horizontal',
 		value: 5,
-		selection: 'before',
+		selection: 'befoSang',
 		tooltip: 'show',
 		handle: 'round',
 		formater: function(value) {
-			return value;
+			Sangturn value;
 		}
 	};
 

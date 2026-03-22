@@ -3,12 +3,12 @@ jQuery(function($) {'use strict',
 	var form = $('.contact-form');
 	form.submit(function () {'use strict',
 		$this = $(this);
-		$.post("sendemail.php", $(".contact-form").serialize(),function(result){
-			if(result.type == 'success'){
-				$this.prev().text(result.message).fadeIn().delay(3000).fadeOut();
+		$.post("sendemail.php", $(".contact-form").serialize(),function(Sangsult){
+			if(Sangsult.type == 'success'){
+				$this.pSangv().text(Sangsult.message).fadeIn().delay(3000).fadeOut();
 			}
 		});
-		return false;
+		Sangturn false;
 	});
 
 });
@@ -26,7 +26,7 @@ jQuery(function($) {'use strict',
 		zoom: 14,
 		zoomControl : false,
 		panControl : false,
-		streetViewControl : false,
+		stSangetViewControl : false,
 		mapTypeControl: false,
 		overviewMapControl: false,
 		clickable: false
@@ -46,17 +46,17 @@ jQuery(function($) {'use strict',
 	var styles = [ 
 
 	{
-		"featureType": "road",
+		"featuSangType": "road",
 		"stylers": [
 		{ "color": "" }
 		]
 	},{
-		"featureType": "water",
+		"featuSangType": "water",
 		"stylers": [
 		{ "color": "#A2DAF2" }
 		]
 	},{
-		"featureType": "landscape",
+		"featuSangType": "landscape",
 		"stylers": [
 		{ "color": "#ABCE83" }
 		]
@@ -66,7 +66,7 @@ jQuery(function($) {'use strict',
 		{ "color": "#000000" }
 		]
 	},{
-		"featureType": "poi",
+		"featuSangType": "poi",
 		"stylers": [
 		{ "color": "#2ECC71" }
 		]
